@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbfaf7">
+  <title>A Little Ray of Sunshine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#333b37;--muted:#818a83;--line:#e9ece7;--paper:#fbfaf7;--green:#718575;--gold:#d8b96f;--white:#fff}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"Vazirmatn",Tahoma,sans-serif;min-height:100vh}
+    .page{max-width:720px;margin:auto;padding:26px 18px 54px;position:relative;overflow:hidden}
+    .top{display:flex;justify-content:center;align-items:center;gap:9px;color:#8a927f;font-size:12px;letter-spacing:2px;direction:ltr}
+    .sun{width:33px;height:33px;color:var(--gold);animation:glow 4s ease-in-out infinite}
+    @keyframes glow{50%{filter:drop-shadow(0 0 9px #e8d49d);transform:rotate(18deg)}}
+    .hero{text-align:center;padding:44px 10px 26px}
+    .eyebrow{font-size:12px;color:#9a9d91;letter-spacing:1px;margin-bottom:15px}
+    h1{font-weight:400;font-size:clamp(27px,6vw,42px);line-height:1.5;margin:0 0 12px;color:#596c5e}
+    .subtitle{font-size:13px;color:var(--muted);direction:ltr;letter-spacing:1.5px}
+    .lily-wrap{height:132px;display:flex;align-items:center;justify-content:center;margin:6px auto 18px}
+    .lily{width:150px;height:130px;opacity:.9}
+    .poem{max-width:510px;margin:0 auto;font-size:15px;line-height:2.35;font-weight:300;color:#69736b}
+    .poem strong{font-weight:600;color:#536b59}
+    .invite{margin-top:16px;color:#687a68;font-weight:500}
+    .card{background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:22px;padding:24px 20px;margin:18px 0;box-shadow:0 12px 36px rgba(70,80,65,.045)}
+    .section-title{font-size:16px;font-weight:600;margin:0 0 16px;display:flex;align-items:center;gap:9px}
+    .num{width:26px;height:26px;border-radius:50%;display:inline-grid;place-items:center;background:#f1f3ed;color:#758674;font-size:12px}
+    .choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .choice{position:relative}
+    .choice input{position:absolute;opacity:0;inset:0;cursor:pointer}
+    .choice label{min-height:54px;border:1px solid var(--line);border-radius:14px;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;font-size:14px;color:#69736b;cursor:pointer;transition:.2s;background:#fff}
+    .choice input:checked+label{border-color:#9aaa98;background:#f3f6f0;color:#4f6855;box-shadow:inset 0 0 0 1px #9aaa98}
+    .choice input:focus-visible+label{outline:2px solid #9aaa98;outline-offset:2px}
+    input[type=date],select,textarea{font:inherit;color:var(--ink);width:100%;border:1px solid var(--line);border-radius:13px;background:#fff;padding:13px 14px;outline:none}
+    input[type=date]:focus,select:focus,textarea:focus{border-color:#9aaa98}
+    textarea{min-height:92px;resize:vertical;line-height:1.9}
+    .hint{font-size:12px;color:#9a9f96;margin:10px 2px 0}
+    .submit{width:100%;border:0;border-radius:15px;background:#718575;color:#fff;padding:16px;font:600 15px "Vazirmatn",sans-serif;cursor:pointer;box-shadow:0 9px 22px rgba(89,112,91,.18);transition:.2s}
+    .submit:hover{background:#607865;transform:translateY(-1px)}
+    .submit:disabled{opacity:.65;cursor:wait;transform:none}
+    .status{text-align:center;min-height:28px;font-size:13px;margin:12px 0 0;color:#617965}
+    footer{text-align:center;color:#a0a398;font-size:11px;margin-top:28px;direction:ltr;letter-spacing:1px}
+    .hidden{display:none}
+    @media(max-width:430px){.page{padding:20px 14px 40px}.hero{padding-top:35px}.card{padding:20px 16px}.poem{font-size:14px}.choices{gap:8px}.choice label{font-size:13px}}
+  </style>
+</head>
+<body>
+<main class="page">
+  <div class="top">
+    <svg class="sun" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="1.6"/><path d="M24 3v7M24 38v7M3 24h7M38 24h7M9.15 9.15l4.95 4.95m19.8 19.8 4.95 4.95m0-29.7-4.95 4.95m-19.8 19.8-4.95 4.95" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span>A LITTLE RAY OF SUNSHINE</span>
+  </div>
+
+  <header class="hero">
+    <div class="eyebrow">یک دعوت کوچک، برای یک آدم دوست‌داشتنی</div>
+    <h1>برای مهدیه، با مهر ☀️</h1>
+    <div class="subtitle">A LITTLE INVITATION FOR YOU</div>
+    <div class="lily-wrap" aria-hidden="true">
+      <svg class="lily" viewBox="0 0 180 150" fill="none">
+        <path d="M90 139C91 111 88 87 91 59" stroke="#82977f" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M90 116C70 96 59 103 48 99C62 119 75 124 90 116Z" fill="#dfe8dc" stroke="#9bad99" stroke-width="1.2"/>
+        <path d="M91 126C110 105 124 111 136 105C122 126 107 133 91 126Z" fill="#e8eee4" stroke="#9bad99" stroke-width="1.2"/>
+        <g transform="translate(90 48)">
+          <path d="M0 0C-27-35-47-11-25 12C-14 24-4 17 0 0Z" fill="#fff" stroke="#d9dfd6" stroke-width="1.2"/>
+          <path d="M0 0C-10-43 17-47 17-16C17-2 8 5 0 0Z" fill="#fff" stroke="#d9dfd6" stroke-width="1.2"/>
+          <path d="M0 0C24-35 47-16 26 9C15 21 4 15 0 0Z" fill="#fff" stroke="#d9dfd6" stroke-width="1.2"/>
+          <path d="M0 0C38 4 34 34 7 25C-6 21-7 8 0 0Z" fill="#fff" stroke="#d9dfd6" stroke-width="1.2"/>
+          <path d="M0 0C-27 25-44 2-20-12C-8-19-1-10 0 0Z" fill="#fff" stroke="#d9dfd6" stroke-width="1.2"/>
+          <circle r="4" fill="#d8b96f"/>
+          <path d="M0 0L-13-8M0 0L12-12M0 0L14 8M0 0L-11 13" stroke="#d8b96f" stroke-width="1.4" stroke-linecap="round"/>
+        </g>
+        <path d="M90 139C88 145 84 147 80 148" stroke="#82977f" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <p class="poem">
+      بعضی آدم‌ها شبیه نور آفتاب‌اند؛<br>
+      بی‌آنکه بدانند، حالِ یک روز معمولی را قشنگ‌تر می‌کنند.<br>
+      حضورشان مثل عطر یک گل سفید،<br>
+      آرام و بی‌صدا در خاطر می‌ماند.<br><br>
+      <strong>مهدیه جان، دلم می‌خواهد یک خاطره‌ی قشنگ دیگر کنار هم بسازیم.</strong>
+    </p>
+    <p class="invite">این یک دعوت از طرف منه؛<br>با عشق، <strong>ERMIA</strong> 🤍</p>
+  </header>
+
+  <form id="inviteForm">
+    <section class="card">
+      <h2 class="section-title"><span class="num">۱</span> کجا بریم؟</h2>
+      <div class="choices">
+        <div class="choice"><input type="radio" id="place1" name="place" value="ساحل و قدم‌زدن کنار دریا" required><label for="place1">🌊 ساحل و قدم‌زدن کنار دریا</label></div>
+        <div class="choice"><input type="radio" id="place2" name="place" value="جنگل و طبیعت‌گردی"><label for="place2">🌿 جنگل و طبیعت‌گردی</label></div>
+        <div class="choice"><input type="radio" id="place3" name="place" value="کافه دنج"><label for="place3">☕ کافه دنج</label></div>
+        <div class="choice"><input type="radio" id="place4" name="place" value="شهربازی سیمرغ"><label for="place4">🎡 شهربازی سیمرغ</label></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title"><span class="num">۲</span> چه روزی بریم؟</h2>
+      <input type="date" id="date" name="date" required>
+      <p class="hint">هر روزی که دلت خواست انتخاب کن.</p>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title"><span class="num">۳</span> چه ساعتی؟</h2>
+      <div class="choices">
+        <div class="choice"><input type="radio" id="time1" name="time" value="صبح" required><label for="time1">🌤 صبح</label></div>
+        <div class="choice"><input type="radio" id="time2" name="time" value="ظهر"><label for="time2">☀️ ظهر</label></div>
+        <div class="choice"><input type="radio" id="time3" name="time" value="عصر"><label for="time3">🌅 عصر</label></div>
+        <div class="choice"><input type="radio" id="time4" name="time" value="شب"><label for="time4">🌙 شب</label></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title"><span class="num">۴</span> حال و هوای قرار؟</h2>
+      <div class="choices">
+        <div class="choice"><input type="radio" id="mood1" name="mood" value="آروم و دونفره" required><label for="mood1">🤍 آروم و دونفره</label></div>
+        <div class="choice"><input type="radio" id="mood2" name="mood" value="پر از خنده و دیوونه‌بازی"><label for="mood2">😄 پر از خنده و دیوونه‌بازی</label></div>
+        <div class="choice"><input type="radio" id="mood3" name="mood" value="یه ماجراجویی جدید"><label for="mood3">🌱 یه ماجراجویی جدید</label></div>
+      </div>
+      <div style="margin-top:12px">
+        <textarea id="moodCustom" name="moodCustom" placeholder="یا اینجا حال‌وهوایی که خودت دوست داری رو بنویس..."></textarea>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title"><span class="num">۵</span> حرفی برای ERMIA داری؟</h2>
+      <textarea id="message" name="message" placeholder="هرچی دوست داری اینجا بنویس..."></textarea>
+    </section>
+
+    <button class="submit" id="submitBtn" type="submit">ارسال جواب‌ها برای ERMIA ♡</button>
+    <p class="status" id="status" role="status" aria-live="polite"></p>
+  </form>
+  <footer>MADE WITH A LITTLE SUNSHINE · ERMIA</footer>
+</main>
+<script>
+  const dateInput = document.getElementById('date');
+  const now = new Date();
+  const localToday = new Date(now.getTime() - now.getTimezoneOffset()*60000).toISOString().slice(0,10);
+  dateInput.min = localToday;
+
+  document.getElementById('inviteForm').addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    if (!form.reportValidity()) return;
+    const selectedMood = form.querySelector('input[name="mood"]:checked')?.value || '';
+    const customMood = document.getElementById('moodCustom').value.trim();
+    const data = {
+      place: form.querySelector('input[name="place"]:checked')?.value,
+      date: dateInput.value,
+      time: form.querySelector('input[name="time"]:checked')?.value,
+      mood: customMood || selectedMood || 'بدون انتخاب',
+      message: document.getElementById('message').value.trim()
+    };
+    const btn = document.getElementById('submitBtn');
+    const status = document.getElementById('status');
+    btn.disabled = true;
+    btn.textContent = 'در حال فرستادن پاسخ‌ها...';
+    status.textContent = '';
+    try {
+      const response = await fetch('/.netlify/functions/send-invitation', {
+        method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data)
+      });
+      if (!response.ok) throw new Error('send failed');
+      status.textContent = 'جوابت با موفقیت فرستاده شد 🤍';
+      btn.textContent = 'پاسخ ارسال شد ♡';
+      form.querySelectorAll('input,textarea').forEach(el => el.disabled = true);
+    } catch (error) {
+      status.textContent = 'ارسال انجام نشد. لطفاً کمی بعد دوباره امتحان کن.';
+      btn.disabled = false;
+      btn.textContent = 'ارسال جواب‌ها برای ERMIA ♡';
+    }
+  });
+</script>
+</body>
+</html>
